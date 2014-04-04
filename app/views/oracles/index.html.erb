@@ -1,0 +1,31 @@
+<h1>Listing oracles</h1>
+
+<table>
+ <tr>
+    <th>ZID</th>
+    <th>NetID</th>
+    <th>LAST_NAME</th>
+    <th>FIRST_NAME</th>
+    <th>BIRTH_DATE</th>
+    <th>EMAIL</th>
+    <th>ECLS_DESC</th>
+  </tr>
+
+<% @oracles.each do |oracle| %>
+
+
+  <tr>
+    <td><%= oracle.zid %></td>
+    <td><%= oracle.fau_netid %></td>
+    <td><%= oracle.last_name %></td>
+    <td><%= oracle.first_name %></td>
+    <td><%= oracle.birth_date %></td>
+    <td><%= oracle.email %></td>
+    <td><%= oracle.ecls_desc %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%#= link_to 'New Oracle', new_oracle_path %>
